@@ -30,10 +30,6 @@ pipeline {
                 sh 'mvn package'
             }
         }
-	stage('Deployment') {
-	   steps {
-		sh 'scp target/gamutkart.war root@13.126.220.247:/root/apache-tomcat-9.0.91/webapps'
-	}
     }
 }
-}
+
